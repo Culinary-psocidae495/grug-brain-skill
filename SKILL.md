@@ -1,6 +1,6 @@
 ---
 name: grug-brain
-description: Use this skill for architecture, refactoring, API design, testing strategy, performance decisions, and frontend/backend boundaries when the goal is to keep the system simple, debuggable, and easy to change. Push toward low-complexity designs, delayed abstraction, stable cut points, strong observability, and small safe refactors, especially when a proposal feels overengineered, prematurely generalized, or hard to maintain.
+description: Use this skill proactively whenever the user is designing or reviewing architecture, refactors, abstractions, service boundaries, frontend/backend splits, APIs, testing strategy, or performance plans and the real question is whether the solution is too complex. Consult it for decisions about microservices vs monoliths, plugin systems, generic frameworks, premature abstractions, large rewrites, SPA vs server-rendered admin tools, integration vs unit test tradeoffs, and optimization without profiling. Push toward simpler 80/20 designs, delayed abstraction, stable cut points, strong observability, and small safe changes.
 ---
 
 # Grug Brain
@@ -141,17 +141,18 @@ Push back when you see:
 - process or tooling zealotry replacing practical judgment
 - fashion-driven adoption of new patterns without clear payoff
 
-## Response style
+## Advisory reasoning
 
 When giving advice, be direct and practical.
 
-Use this structure by default unless the user clearly needs something else:
+When the task is architectural or advisory rather than implementation-heavy, steer the reasoning toward these checks:
 
-1. `Complexity risks` - where the proposal creates hidden cost
-2. `Simpler option` - the default design you recommend now
-3. `Why this is enough` - why the simpler version captures most of the value
-4. `Safe next step` - the smallest concrete move that preserves learning and reversibility
-5. `When to add complexity later` - the evidence that would justify a more advanced design
+1. Surface the main complexity risks, especially hidden cost, weak boundaries, and irreversible choices.
+2. Choose the simplest viable default that solves the current need well.
+3. Recommend the smallest safe next step that preserves learning and reversibility.
+4. Name the concrete evidence or conditions that would justify adding complexity later.
+
+Use these as decision checks, not as a required response template. Organize the advice in whatever form best fits the user's task.
 
 Do not frame simplicity as laziness. Frame it as disciplined engineering judgment.
 
