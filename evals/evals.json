@@ -1,0 +1,23 @@
+{
+  "skill_name": "grug-brain",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm designing a new internal operations platform. Right now it's a couple of CRUD screens and a nightly sync job, but the team wants to start with six microservices, Kafka, GraphQL, and a workflow engine so we 'don't have to re-architect later'. Can you help me decide what architecture to use?",
+      "expected_output": "Pushes back on speculative complexity, recommends a simpler initial architecture, explains what evidence would justify more distributed components later.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have a 3000-line billing module that's ugly, but it works. I want to refactor it into a generic rules engine and plugin system before we add regional pricing. How would you approach the refactor?",
+      "expected_output": "Respects existing working code, warns against a large speculative rewrite, recommends small safe refactor steps and finding stable cut points first.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our product manager wants a React SPA with a separate JSON API for a simple admin tool that mostly edits records and shows reports. The frontend lead says server-rendered pages are 'old fashioned'. What would a simpler but still professional approach look like?",
+      "expected_output": "Advocates for a lower-complexity frontend architecture, explains tradeoffs, and avoids defaulting to fashionable frontend complexity without a real need.",
+      "files": []
+    }
+  ]
+}
