@@ -18,6 +18,24 @@
       "prompt": "Our product manager wants a React SPA with a separate JSON API for a simple admin tool that mostly edits records and shows reports. The frontend lead says server-rendered pages are 'old fashioned'. What would a simpler but still professional approach look like?",
       "expected_output": "Advocates for a lower-complexity frontend architecture, explains tradeoffs, and avoids defaulting to fashionable frontend complexity without a real need.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I'm designing a shared SDK for five internal tools. My first instinct is to build a fully generic resource abstraction with builders, adapters, and extension hooks so we can support future data types. Right now the only real need is fetching users and updating account settings. How should I design the API?",
+      "expected_output": "Pushes toward an API designed around current common use cases, warns against speculative generic machinery, and recommends layering complexity only after real extension points emerge.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "My team wants every module covered by detailed unit tests before we continue a refactor. The code is still moving a lot, and we already have a few integration tests around the main workflows. What testing strategy would you recommend?",
+      "expected_output": "Recommends a balanced testing strategy centered on stable integration boundaries, cautions against over-investing in brittle implementation-level unit tests, and preserves a small end-to-end safety net.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "A dashboard feels slow, and one engineer wants to spend a sprint rewriting the rendering pipeline because there are nested loops in the code. We have no profiling data yet. How would you approach the performance work?",
+      "expected_output": "Rejects premature optimization, asks for evidence such as profiling or traces, and prioritizes measured bottlenecks over intuition or code aesthetics.",
+      "files": []
     }
   ]
 }

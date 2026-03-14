@@ -1,13 +1,23 @@
 ---
 name: grug-brain
-description: Apply grug-brain software principles to architecture, design, refactoring, and API decisions. Use whenever the user is planning a system, debating abstractions, considering microservices, reshaping frontend/backend boundaries, defining tests, tuning performance, or asking whether a design is too complex, overengineered, hard to debug, or hard to maintain. Steer toward simple 80/20 solutions, delayed abstraction, stable cut points, locality of behavior, strong logging, and small safe refactors.
+description: Use this skill for architecture, refactoring, API design, testing strategy, performance decisions, and frontend/backend boundaries when the goal is to keep the system simple, debuggable, and easy to change. Push toward low-complexity designs, delayed abstraction, stable cut points, strong observability, and small safe refactors, especially when a proposal feels overengineered, prematurely generalized, or hard to maintain.
 ---
 
 # Grug Brain
 
-Translate the grug article into calm engineering judgment.
+Use this skill as a simplicity and maintainability lens for software decisions.
 
-Do not imitate the article's voice, jokes, or spelling. Extract the underlying philosophy and apply it in a plain, senior, practical way.
+Favor designs that are easy to understand, easy to debug, and easy to change in small steps. Push back on speculative abstraction, unnecessary distribution, and cleverness that adds moving parts without clear payoff.
+
+## Decision filter
+
+When comparing options, prefer:
+
+- simple over flexible-by-default
+- local over distributed
+- explicit over clever
+- measured over assumed
+- reversible over sweeping
 
 ## Core stance
 
@@ -135,7 +145,7 @@ Push back when you see:
 
 When giving advice, be direct and practical.
 
-Prefer this structure when it helps:
+Use this structure by default unless the user clearly needs something else:
 
 1. `Complexity risks` - where the proposal creates hidden cost
 2. `Simpler option` - the default design you recommend now
