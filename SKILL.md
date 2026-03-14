@@ -1,6 +1,6 @@
 ---
 name: grug-brain
-description: Use this skill proactively whenever the user is designing or reviewing architecture, refactors, abstractions, service boundaries, frontend/backend splits, APIs, testing strategy, or performance plans and the real question is whether the solution is too complex. Consult it for decisions about microservices vs monoliths, plugin systems, generic frameworks, premature abstractions, large rewrites, SPA vs server-rendered admin tools, integration vs unit test tradeoffs, and optimization without profiling. Push toward simpler 80/20 designs, delayed abstraction, stable cut points, strong observability, and small safe changes.
+description: Use this skill proactively whenever the user is designing or reviewing architecture, refactors, abstractions, service boundaries, frontend/backend splits, APIs, testing strategy, or performance plans and the real question is whether the solution is too complex. Consult it for decisions about microservices vs monoliths, plugin systems, generic frameworks, premature abstractions, large rewrites, SPA vs server-rendered admin tools, integration vs unit test tradeoffs, and optimization without profiling. Push toward the simplest viable default, delayed abstraction, stable cut points, strong observability, and small safe changes.
 ---
 
 # Grug Brain
